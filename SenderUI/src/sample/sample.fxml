@@ -1,0 +1,18 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ScrollPane?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <Label fx:id="label" GridPane.rowIndex="0" GridPane.columnIndex="0">IP ADDRESS:</Label>
+    <TextField fx:id="ipbox" GridPane.rowIndex="0" GridPane.columnIndex="1">localhost:3333</TextField>
+    <Button  GridPane.rowIndex="0" GridPane.columnIndex="2" onAction="#change" >Connect</Button>
+    <TextArea editable="false" fx:id="chatwindow" GridPane.rowIndex="1" GridPane.columnIndex="1" minWidth="600" minHeight="200">No Connection</TextArea>
+
+    <TextArea fx:id="msgbox" GridPane.rowIndex="3" GridPane.columnIndex="1" minWidth="200"></TextArea>
+    <Button fx:id="sendButton" disable="true" GridPane.rowIndex="4" GridPane.columnIndex="1" onAction="#sendMsg">SEND</Button>
+</GridPane>
