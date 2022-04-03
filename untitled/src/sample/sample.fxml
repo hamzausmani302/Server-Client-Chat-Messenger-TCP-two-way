@@ -7,7 +7,7 @@
 <?import javafx.scene.control.TextArea?>
 <GridPane fx:controller="sample.Controller"
           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-    <Label fx:id="label" GridPane.rowIndex="0" GridPane.columnIndex="0">IP ADDRESS:</Label>
+    <Label fx:id="label" GridPane.rowIndex="0" GridPane.columnIndex="0">PORT:</Label>
     <TextArea fx:id="portbox" maxHeight="5" GridPane.rowIndex="0" GridPane.columnIndex="1">3333</TextArea>
     <Button fx:id="listenbutton"  GridPane.rowIndex="0" GridPane.columnIndex="2" onAction="#change" >Start Listening</Button>
     <TextArea editable="false" fx:id="chatwindow" GridPane.rowIndex="1"  GridPane.columnIndex="1" minWidth="600" minHeight="200"></TextArea>
