@@ -27,7 +27,7 @@ public class Sender extends Thread {
 
 
             _stream.writeUTF(_msg);
-            chatwindow.setText(chatwindow.getText() + "\nme> " + _msg);
+            chatwindow.setText(chatwindow.getText() + "\nme(Ibad)> " + _msg);
             return true;
         }catch (Exception err){
             return false;
@@ -52,7 +52,7 @@ public class Sender extends Thread {
                    while(true) {
                        String data = _stream_in.readUTF();
                        System.out.println(data);
-                       chatwindow.setText(chatwindow.getText() +"\nfriend> "+data);
+                       chatwindow.setText(chatwindow.getText() +"\nfriend(Hamza)> "+data);
                    }
                 }catch (Exception err){
                     System.out.println("no");
@@ -64,7 +64,7 @@ public class Sender extends Thread {
                         System.out.print("msg ->");
                         String data = sc.nextLine();
                         _stream.writeUTF(data);
-                        chatwindow.setText(chatwindow.getText() +"\nme> "+data);
+                        chatwindow.setText(chatwindow.getText() +"\nme(Ibad)> "+data);
 
                     }
                 }catch (Exception err){
